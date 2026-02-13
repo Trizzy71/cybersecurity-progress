@@ -14,3 +14,10 @@ Documenting my progress through the Google Cybersecurity Professional Certificat
 
 ## Labs
 Labs and projects from the certification (moving forward)
+
+# TryHackMe
+ - [3] Rooms Completed
+
+# Roadmap.sh
+ - Cybersecurity Expert
+    - https://roadmap.sh/cyber-security?s=68ca2fae1a0296edefc80c47
