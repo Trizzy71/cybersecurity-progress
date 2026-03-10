@@ -1,7 +1,8 @@
-# Google Cybersecurity Certificate
+
+## Google Cybersecurity Certificate
 Documenting my progress through the Google Cybersecurity Professional Certificate.
 
-## Progress
+### Progress
  - [x] Course 1: Foundations of Cybersecurity
  - [x] Course 2: Play it Safe: Manage Security Risks
  - [x] Course 3: Connect and Protect: Networks and Network Security
@@ -12,12 +13,12 @@ Documenting my progress through the Google Cybersecurity Professional Certificat
  - [ ] Course 8: Put it to Work: Prepare for Cybersecurity Jobs
  - [ ] Course 9: Accelerate Your Job Search with AI
 
-## Labs
+### Labs
 Labs and projects from the certification (moving forward)
 
-# TryHackMe
- - [3] Rooms Completed
+## TryHackMe
+ - [5] Rooms Completed
 
-# Roadmap.sh
+## Roadmap.sh
  - Cybersecurity Expert
     - https://roadmap.sh/cyber-security?s=68ca2fae1a0296edefc80c47
