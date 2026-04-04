@@ -1,29 +1,61 @@
 # Apply Filters to SQL Queries
-
-**Course 4:** Tools of the Trade: Linux and SQL  
-**Date:** 2026-03
+[Google Cyber security] [Course 4]: Tools of the Trade: Linux and SQL  
+Date: 2026-03
+Tags: #SQL #Google
 
 ## Project description
 SQL, or Structured Query Language, allows you to manage and manipulate data in regional database management systems (RDBMS). 
 It allows users to perform tasks such as querying and updating the data presented.
-
 ## Retrieve after hours failed login attempts
+Discovered an incident that occurred after business hours. Query the **log_in_attempts** table and review after hours login activity (post 18:00).
 
-
+```sql
+-- Query to find all log in attempts made after 18:00 which were unsuccessful.
+SELECT *
+FROM log_in_attempts
+WHERE 'login_time' > 18:00 AND 'success' = 0;
+```
 ## Retrieve login attempts on specific dates
-[Add content here.]
+A suspicious event occurred on 2022-05-09. You want to review all login attempts from this day and the day before.
+
+```sql
+-- Query to find all login attempts on two specific dates.
+SELECT * 
+FROM log_in_attempts 
+WHERE login_date = '2022-05-08' OR login_date = '2022-05-09';
+```
 
 ## Retrieve login attempts outside of Mexico
-[Add content here.]
+Suspicious activity with login attempts, the team had determined that the activity did not originate in Mexico. Investigate login attempts outside of Mexico. (Remember to use the **LIKE** keyword with **%** to make sure your query reflects this)
+
+```sql
+-- Query to find all login attempts originating from outside Mexico.
+SELECT * 
+FROM log_in_attempts
+WHERE NOT country LIKE 'MEX%';
+```
 
 ## Retrieve employees in Marketing
-[Add content here.]
+Filter for employees in the Marketing department who are in ANY office in the East building.
+```sql
+SELECT * 
+FROM employees
+WHERE department = 'Marketing' 
+  AND office LIKE 'East%';
+```
 
 ## Retrieve employees in Finance or Sales
-[Add content here.]
+Filter for employees in either the Finance OR Sales department.
+```sql
+SELECT * 
+FROM employees
+WHERE department = 'Finance' OR department = 'Sales';
+```
 
 ## Retrieve all employees not in IT
-[Add content here.]
-
-## Summary
-[Add content here.]
+Exclude employees from the Information Technology department using the **NOT** operator.
+```sql
+SELECT * 
+FROM employees
+WHERE NOT department = 'Information Technology';
+```
