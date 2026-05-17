@@ -14,7 +14,7 @@ Documenting my progress through the Google Cybersecurity Professional Certificat
  - [X] Course 4: Tools of the Trade: Linux and SQL (Apr. 9 2026)
   - https://coursera.org/share/6a8ee255455e17fd3476bda24d33d83b
  - [x] Course 5: Assets, Threats, and Vulnerabilities
-  - https://www.coursera.org/account/accomplishments/records/VYH1FHT2O5KT
+  - https://coursera.org/share/03fd7f48f28ef527122bd9b24de08fda
  - [ ] Course 6: Sound the Alarm: Detection and Response (In-Progress)
  - [ ] Course 7: Automate Cybersecurity Tasks with Python
  - [ ] Course 8: Put it to Work: Prepare for Cybersecurity Jobs
