@@ -15,7 +15,7 @@ Documenting my progress through the Google Cybersecurity Professional Certificat
   - https://coursera.org/share/6a8ee255455e17fd3476bda24d33d83b
  - [x] Course 5: Assets, Threats, and Vulnerabilities
   - https://coursera.org/share/03fd7f48f28ef527122bd9b24de08fda
- - [ ] Course 6: Sound the Alarm: Detection and Response (In-Progress)
+ - [x] Course 6: Sound the Alarm: Detection and Response (In-Progress)
  - [ ] Course 7: Automate Cybersecurity Tasks with Python
  - [ ] Course 8: Put it to Work: Prepare for Cybersecurity Jobs
  - [ ] Course 9: Accelerate Your Job Search with AI
