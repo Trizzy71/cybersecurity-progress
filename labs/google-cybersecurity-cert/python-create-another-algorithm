@@ -1,0 +1,144 @@
+# python-create-another-algorithm
+In this lab: working with a text file containing IP addresses that are allowed to access specific restricted content at your organization.
+
+Develop an algorithm that parses the text file of IP addresses and updates the file by removing the addresses that no longer have access to the restricted content.
+
+## Task 1
+You're given a text file called `allow_list.txt` that contains the series of IP addresses. There are IPs that shouldn't have access anymore, they must be removed. 
+```Python
+# Assign `import_file` to the name of the file 
+import_file = "allow_list.txt"
+# Assign `remove_list` to a list of IP addresses that are no longer allowed to access restricted information. 
+remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
+# Display `import_file`
+print(import_file)
+# Display `remove_list`
+print(remove_list)
+# output
+allow_list.txt
+['192.168.97.225', '192.168.158.170', '192.168.201.40', '192.168.58.57']
+```
+## Task 2
+Opening the text file using `import_file` variable, the `with` keyword and the `open()` function with the `"r"` parameter.
+```Python
+# Assign `import_file` to the name of the file 
+import_file = "allow_list.txt"
+# Assign `remove_list` to a list of IP addresses that are no longer allowed to access restricted information. 
+remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
+# First line of `with` statement
+with open("import_file.txt", "r") as file:
+# output
+  File "<ipython-input-6-43dd559bc806>", line 11
+    with open("import_file.txt", "r") as file:
+                                              ^
+SyntaxError: unexpected EOF while parsing
+```
+**Note:** this fails, we will complete the `with` statement the task after this.
+
+## Task 3
+Use the `.read()` method to read the file and store it in a variable named `ip_addresses`, then display it to examine the data in its current format.
+```Python
+import_file = "allow_list.txt"
+remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
+with open(import_file, "r") as file:
+  # Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
+  ip_addresses = file.read()
+# Display `ip_addresses`
+print(ip_addresses)
+# output
+ip_address
+192.168.25.60
+192.168.205.12
+192.168.97.225
+192.168.6.9
+192.168.52.90
+192.168.158.170
+192.168.90.124
+192.168.186.176
+192.168.133.188
+192.168.203.198
+192.168.201.40
+192.168.218.219
+192.168.52.37
+192.168.156.224
+192.168.60.153
+192.168.58.57
+192.168.69.116
+```
+
+## Task 4
+After the read, reassign the `ip_addresses` variable so it is updated from a string to a list. Use the `.split()` method. This step will allow you to iterate through each of the IP addresses in the allow list instead of navigating a large string that contains all the addresses merged together.
+
+After, display the `ip_addresses` variable to erify that the update took.
+```Python
+import_file = "allow_list.txt"
+remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
+with open(import_file, "r") as file:
+  ip_addresses = file.read()
+# Use `.split()` to convert `ip_addresses` from a string to a list
+ip_addresses = ip_addresses.split()
+print(ip_addresses)
+# output
+['ip_address', '192.168.25.60', '192.168.205.12', '192.168.97.225', '192.168.6.9', '192.168.52.90', '192.168.158.170', '192.168.90.124', '192.168.186.176', '192.168.133.188', '192.168.203.198', '192.168.201.40', '192.168.218.219', '192.168.52.37', '192.168.156.224', '192.168.60.153', '192.168.58.57', '192.168.69.116']
+```
+
+## Task 5/6
+Now, write code that removes the elements of `remove_list` from the `ip_addresses` list. It will require an iterative statement and a conditional statement.
+```Python
+import_file = "allow_list.txt"
+remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
+with open(import_file, "r") as file:
+  ip_addresses = file.read()
+ip_addresses = ip_addresses.split()
+# Build iterative statement
+# Name loop variable `element`
+# Loop through `ip_addresses`
+for element in ip_addresses:
+  # Build conditional statement
+  # If current element is in `remove_list`,
+    if element in remove_list:
+        # then current element should be removed from `ip_addresses`
+        ip_addresses.remove(element)
+print(ip_addresses)
+# output
+['ip_address', '192.168.25.60', '192.168.205.12', '192.168.6.9', '192.168.52.90', '192.168.90.124', '192.168.186.176', '192.168.133.188', '192.168.203.198', '192.168.218.219', '192.168.52.37', '192.168.156.224', '192.168.60.153', '192.168.69.116']
+```
+
+## Task 7/8/9/10
+I finally realized that each of these just build on themself so here is the final code block with all of the comments from jupyter. The final steps are updating the original file that was used to create the `ip_addresses` list. Verify that the original file was rewritten using the correct list. Create a function with it, and call the `update_file()` that was defined.
+```Python
+# Define a function named `update_file` that takes in two parameters: `import_file` and `remove_list`
+# and combines the steps you've written in this lab leading up to this
+def update_file(import_file, remove_list):
+  # Build `with` statement to read in the initial contents of the file
+  with open(import_file, "r") as file:
+    # Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
+    ip_addresses = file.read()
+  # Use `.split()` to convert `ip_addresses` from a string to a list
+  ip_addresses = ip_addresses.split()
+  # Build iterative statement
+  # Name loop variable `element`
+  # Loop through `ip_addresses`
+  for element in ip_addresses:
+    # Build conditional statement
+    # If current element is in `remove_list`,
+    if element in remove_list:
+      # then current element should be removed from `ip_addresses`
+      ip_addresses.remove(element)
+  # Convert `ip_addresses` back to a string so that it can be written into the text file 
+  ip_addresses = " ".join(ip_addresses)       
+  # Build `with` statement to rewrite the original file
+  with open(import_file, "w") as file:
+    # Rewrite the file, replacing its contents with `ip_addresses`
+    file.write(ip_addresses)
+# Call `update_file()` and pass in "allow_list.txt" and a list of IP addresses to be removed
+update_file("allow_list.txt", remove_list)
+# Build `with` statement to read in the updated file
+with open("allow_list.txt", "r") as file:
+  # Read in the updated file and store the contents in `text`
+  text = file.read()
+# Display the contents of `text`
+print(text)
+# output
+ip_address 192.168.25.60 192.168.205.12 192.168.6.9 192.168.52.90 192.168.90.124 192.168.186.176 192.168.133.188 192.168.203.198 192.168.218.219 192.168.52.37 192.168.156.224 192.168.60.153 192.168.69.116
+```
