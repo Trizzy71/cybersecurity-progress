@@ -4,7 +4,7 @@ DcTrack: Led SOP creation and data entry for a 90-rack data center in Elk Grove 
 Card Access: Created 60 employee ID badges and wrote formatting for a 6-door machining facility.
 Security Cams: Installed and configured 180 Axis cameras at Midwestern University.
 
-## [x] Google Cybersecurity Certificate (Completed Aug. 18 2026) - 
+## [x] Google Cybersecurity Certificate (Completed Aug. 18 2026) - https://www.coursera.org/account/accomplishments/specialization/Y44OL1GF36YG
 Documenting my progress through the Google Cybersecurity Professional Certificate.
 
 ### Progress
