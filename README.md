@@ -1,8 +1,12 @@
-# My Achievements
-Linux: Deployed and now maintain 6 secure remote access nodes based on both Ubuntu and NixOS for a local AV company.
-DcTrack: Led SOP creation and data entry for a 90-rack data center in Elk Grove Village, IL.
-Card Access: Created 60 employee ID badges and wrote formatting for a 6-door machining facility.
-Security Cams: Installed and configured 180 Axis cameras at Midwestern University.
+## Skills
+ - Linux: Deployed and now maintain 6 secure remote access nodes based on both Ubuntu and NixOS for a local AV company.
+ - Networking: Designed and now maintain a VLAN segregated, secure homelab. Proxmox + TrueNAS boxes running underneath UniFi + Gl.iNet for WAN APs. All of my containerized services are separated from one another which allows me to freely share access through separate instances of Tailscale without compromising my security posture across other services on the network.
+ - DcTrack: Led SOP creation and data entry for a 90-rack data center in Elk Grove Village, IL.
+ - Card Access: Created 60 employee ID badges and wrote formatting for a 6-door machining facility.
+ - Security Cams: Installed and configured 180 Axis cameras at Midwestern University.
+
+## [ ] CompTIA Security+ (Expected October, 2026)
+ - Without taking a specialized course, I was having difficulty focusing my studies. Leveraging my AI stack, created a SPA for taking practice tests and recommending study paths based on CompTIAs outlined objectives. Check out the sec_plus_readiness_spa repo for the HTML file.
 
 ## [x] Google Cybersecurity Professional Certificate (Completed Aug. 18 2026) - https://www.coursera.org/account/accomplishments/specialization/Y44OL1GF36YG
 Documenting my progress through the Google Cybersecurity Professional Certificate.
