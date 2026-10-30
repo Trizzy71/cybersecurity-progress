@@ -5,7 +5,7 @@
  - Card Access: Created 60 employee ID badges and wrote formatting for a 6-door machining facility.
  - Security Cams: Installed and configured 180 Axis cameras at a local university.
 
-## [ ] CompTIA Security+ (Expected October, 2026)
+## [ ] CompTIA Security+ (Expected Novermber, 2026)
  - Without taking a specialized course, I was having difficulty focusing my studies. Leveraging my AI stack, created a SPA for taking practice tests and recommending study paths based on CompTIAs outlined objectives. Check out the sec_plus_readiness_spa repo for the HTML file.
 
 ## [x] Google Cybersecurity Professional Certificate (Completed Aug. 18 2026) - https://www.coursera.org/account/accomplishments/specialization/Y44OL1GF36YG
